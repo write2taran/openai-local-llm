@@ -1,7 +1,7 @@
 import requests
 
 OLLAMA_CHAT_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "dolphin-mistral-3k"
+MODEL_NAME = "dolphin-mistral"
 
 
 def chat(messages):
@@ -21,3 +21,4 @@ def chat(messages):
 
     data = response.json()
     return data["message"]["content"]
+
